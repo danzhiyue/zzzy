@@ -4,7 +4,9 @@
 int main(){
     float a;
     scanf("%f",&a);
-    if(a<=100&&a>=90){
+    if(a>100||a<0){
+        printf("输入无效");
+    }else if(a<=100&&a>=90){
         printf("A");
     }else if(a<=89.99&&a>=80){
         printf("B");
@@ -12,10 +14,7 @@ int main(){
         printf("C");
     }else if(a<=69.99&&a>=60){
         printf("D");
-    }else if(a<=59.99&&a>=0){
-        printf("E");
     }else{
-        printf("输入无效");
+        printf("E");
     }
     return 0;
-}
