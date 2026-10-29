@@ -1,7 +1,7 @@
 //202610125212
 //但祉悦
 #include<stdio.h>
-int main(){
+int main(void){
     float a;
     scanf("%f",&a);
     if(a<=100&&a>=90){
